@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temoins",
+  "info": {
+    "singularName": "temoin",
+    "pluralName": "temoins",
+    "displayName": "Temoin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "identity": {
+      "type": "string"
+    },
+    "idContent": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "mainColor": {
+      "type": "string"
+    },
+    "itemColor": {
+      "type": "string"
+    },
+    "btnView": {
+      "type": "string"
+    },
+    "gradientMobile": {
+      "type": "string"
+    }
+  }
+}

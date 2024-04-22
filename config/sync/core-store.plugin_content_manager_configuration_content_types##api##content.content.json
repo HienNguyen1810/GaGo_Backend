@@ -1,0 +1,143 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::content.content",
+  "value": {
+    "uid": "api::content.content",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "identity",
+      "defaultSortBy": "identity",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "en": {
+        "edit": {
+          "label": "en",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "en",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "vi": {
+        "edit": {
+          "label": "vi",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "vi",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "zh": {
+        "edit": {
+          "label": "zh",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "zh",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "identity": {
+        "edit": {
+          "label": "identity",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "identity",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "en",
+        "vi",
+        "zh"
+      ],
+      "editRelations": [],
+      "edit": [
+        [
+          {
+            "name": "en",
+            "size": 6
+          },
+          {
+            "name": "vi",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "zh",
+            "size": 6
+          },
+          {
+            "name": "identity",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

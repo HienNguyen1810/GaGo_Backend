@@ -1,0 +1,22 @@
+{
+  "name": "Marketing",
+  "description": "create, find, update,delete, finOne",
+  "type": "marketing",
+  "permissions": [
+    {
+      "action": "api::temoin.temoin.create"
+    },
+    {
+      "action": "api::temoin.temoin.delete"
+    },
+    {
+      "action": "api::temoin.temoin.find"
+    },
+    {
+      "action": "api::temoin.temoin.findOne"
+    },
+    {
+      "action": "api::temoin.temoin.update"
+    }
+  ]
+}

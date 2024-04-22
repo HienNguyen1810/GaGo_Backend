@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  strapi_dev:
+    restart: "unless-stopped"
+    build:
+      context: ./
+      target: DEV_IMAGE
+    ports:
+      - 1345:1345
+    env_file:
+      - .env.development
+
+  strapi_staging:
+    restart: "unless-stopped"
+    build:
+      context: ./
+      target: STAGING_IMAGE
+    ports:
+      - 1346:1346
+    env_file:
+      - .env.staging
+
+  # Using RDS instead of local database.
+  db:
+    container_name: database_swim_school
+    image: nickblah/postgis:14-bullseye-postgis-3
+    restart: always
+    #entrypoint: ./init.sh
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+    env_file:
+      - .env.development
+volumes:
+  db:

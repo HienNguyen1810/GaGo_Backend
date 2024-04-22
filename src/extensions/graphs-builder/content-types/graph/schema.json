@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "graphs_builder_graph",
+  "info": {
+    "name": "graph",
+    "description": "",
+    "singularName": "graph",
+    "pluralName": "graphs",
+    "displayName": "Graph"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "configurable": false,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "pie",
+        "bar",
+        "line",
+        "dateLine"
+      ],
+      "configurable": false,
+      "required": true
+    },
+    "collectionX": {
+      "type": "string",
+      "configurable": false,
+      "required": true
+    },
+    "collectionXAttribute": {
+      "type": "string",
+      "configurable": false
+    },
+    "Tero": {
+      "type": "string"
+    }
+  }
+}
